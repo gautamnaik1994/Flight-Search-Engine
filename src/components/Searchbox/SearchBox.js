@@ -143,7 +143,7 @@ class SearchBox extends Component {
 							value={this.state.departureDate}
 							onDayChange={day => this.setState({ departureDate: day })}
 							dayPickerProps={{
-								todayButton: 'Today',
+
 								disabledDays: [
 									{
 										before: new Date(),

@@ -1,37 +1,37 @@
 {
   "icons": [
     {
-      "src": "icon_1024x1024.c865d9b5418938ce21a682608de2b1ed.png",
+      "src": "icon_1024x1024.f1931eaf1e9b78c48319348a61a838bd.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
     {
-      "src": "icon_512x512.0c01003d8e9fc6d062bdb071b7d2b40e.png",
+      "src": "icon_512x512.6e7a92bc3862bdf7177da3c1b55e3ed9.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "icon_384x384.ed211e2317c1b6b888050ca3fbf35386.png",
+      "src": "icon_384x384.8e29778cee4712cd9f9d1af60d5e78ce.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "icon_256x256.d946ef62f437cfd4de041de022222983.png",
+      "src": "icon_256x256.8239dbc8578660c056e0ea1da7a8a5b8.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "icon_192x192.cc57bfe22340610e9678abf2054aebaf.png",
+      "src": "icon_192x192.d308cf826a781bb9229f9e63e9af3a24.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon_128x128.dd7a4c66b6e2417d4e06cf8528f41c0d.png",
+      "src": "icon_128x128.1616b04cf06c5182dc98e291c25ce1e8.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "icon_96x96.ecddfd0ec5a88ca7c4378720c2c3a592.png",
+      "src": "icon_96x96.37a10fff1df5a919629413432ef74abe.png",
       "sizes": "96x96",
       "type": "image/png"
     }

@@ -2,11 +2,11 @@
 
 
 
-Reactjs Boilerplate using Webpack 4
+Reactjs based app to search flights
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -19,64 +19,29 @@ Git clone the repository
 
 
 ```
-cd ReactStack
+cd Flight-Search-Engine
 npm install
 ```
 
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Jest and Enzyme is used for testing.
-Both unit tests and smnapshot test can be done
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Developing
 
 ```
-Give an example
+npm start
 ```
+This project uses [json-server](https://github.com/typicode/json-server) to serve json data from [db.json](https://github.com/gautamnaik1994/Flight-Search-Engine/blob/master/db.json) file found at the root of the project folder.
 
-### And coding style tests
+In production mode [json-placeholder](https://github.com/typicode/jsonplaceholder) is used to serve the same [db.json](https://github.com/gautamnaik1994/Flight-Search-Engine/blob/master/db.json) from [here](https://my-json-server.typicode.com/gautamnaik1994/Flight-Search-Engine/flights/)
 
-Explain what these tests test and why
+To view the app in browser, open [http://localhost:5000/](http://localhost:5000/). The value of port can be changed in [webpack.config.dev.js](https://github.com/gautamnaik1994/Flight-Search-Engine/blob/master/webpack.config.dev.js)
 
+
+To change the BASE_URL, open [constants.js](https://github.com/gautamnaik1994/Flight-Search-Engine/blob/master/src/components/helpers/constants.js)
+
+### Building the project
 ```
-Give an example
+npm run build
 ```
+will build the project in dist folder.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+### Troubleshooting
+In case of node-sass error during intalling, downgrade or upgrade to node version 8.11

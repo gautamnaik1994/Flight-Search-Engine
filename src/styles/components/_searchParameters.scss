@@ -3,6 +3,7 @@
 	padding: 15px;
 	.left-sec {
 		font-size: 1.2rem;
+
 		text-transform: uppercase;
 		& > * {
 			vertical-align: middle;
@@ -12,6 +13,12 @@
 			margin: 0 10px;
 		}
 	}
+	@include media-breakpoint-down(md) {
+		.left-sec {
+			font-size: 1rem;
+		}
+	}
+
 	.right-sec {
 		& > span {
 			display: inline-block;
