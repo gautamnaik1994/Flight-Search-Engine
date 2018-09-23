@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import './variables';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~bootstrap/scss/bootstrap-grid';
+//@import '~bootstrap/scss/type';
+//@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import './helpers';
+@import '~react-day-picker/lib/style.css';
+@import './icons';
+
+@import './components/card';
+
+@import './components/loader';
+@import './components/logo';
+@import './components/label';
+@import './components/landingPage';
+@import './components/searchBox';
+@import './components/noData';
+@import './components/flightItem';
+@import './components/searchParameters';
+@import './components/messageBox';
+@import './components/customRadio';
+
+body{
+	background: #fbfbfb;
+}
+
+.DayPickerInput{
+	display:block;
+input{
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: 6px 12px;
+	padding: 0.375rem 0.75rem;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+}
+
+
+
+
+.btn{
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: $input-placeholder-color;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: $input-placeholder-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: $input-placeholder-color;
+}
+
+.error{
+	color: #F44336;
+	font-size: 0.7rem;
+	margin-top: 3px;
+}

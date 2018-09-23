@@ -1,0 +1,46 @@
+{
+  "icons": [
+    {
+      "src": "icon_1024x1024.c865d9b5418938ce21a682608de2b1ed.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_512x512.0c01003d8e9fc6d062bdb071b7d2b40e.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.ed211e2317c1b6b888050ca3fbf35386.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.d946ef62f437cfd4de041de022222983.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.cc57bfe22340610e9678abf2054aebaf.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.dd7a4c66b6e2417d4e06cf8528f41c0d.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.ecddfd0ec5a88ca7c4378720c2c3a592.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "React Stack",
+  "short_name": "React Stack",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Personal React Boilerplate",
+  "background_color": "#ffffff"
+}

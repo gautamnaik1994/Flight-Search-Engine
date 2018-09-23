@@ -1,0 +1,11 @@
+{
+  "libs": [
+    "browser",
+    "ecmascript",
+    "react"
+  ],
+"loadEagerly": [
+],
+  "plugins": {
+  }
+}

@@ -1,0 +1,15 @@
+.landing-page{
+	position: relative;
+	padding-top: 100px;
+	margin-bottom: 5rem;
+	&:before{
+		content: "";
+		position: absolute;
+		top:0;
+		right:0;
+		left:0;
+		height: 200px;
+		background: $primary;
+		z-index: -1;
+	}
+}

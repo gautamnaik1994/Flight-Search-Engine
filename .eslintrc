@@ -1,0 +1,30 @@
+{
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier",
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+	"extends": ["airbnb", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": 1,
+		"react/jsx-filename-extension": 0,
+		"indent": ["off", "tab"],
+		"no-tabs": "off",
+		"react/jsx-indent":"off",
+		"react/jsx-indent-props":"off"
+  }
+}
