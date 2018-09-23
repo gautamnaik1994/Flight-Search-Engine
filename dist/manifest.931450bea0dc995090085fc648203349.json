@@ -36,11 +36,11 @@
       "type": "image/png"
     }
   ],
-  "name": "React Stack",
-  "short_name": "React Stack",
+  "name": "Flight Search Engine",
+  "short_name": "Flight Search Engine",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": ".",
-  "description": "Personal React Boilerplate",
+  "description": "Flight Search Engine",
   "background_color": "#ffffff"
 }

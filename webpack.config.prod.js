@@ -35,6 +35,7 @@ module.exports = {
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].[chunkhash:8].css',
+
 		}),
 		// new BundleAnalyzerPlugin(),
 		new workboxPlugin.GenerateSW({
@@ -95,33 +96,62 @@ module.exports = {
 				test: /\.css$/,
 				exclude: /node_modules/,
 				use: [
-					MiniCssExtractPlugin.loader,
+				{
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+
+            }
+          },
 					{
 						loader: 'css-loader',
 						options: {
-							minimize: true,
 							importLoaders: 2,
 						},
 					},
 					'resolve-url-loader',
-					'postcss-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: true,
+
+						},
+					},
 				],
 			},
 			{
 				test: /\.scss$/,
 				exclude: /node_modules/,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+
+            }
+          },
 					{
 						loader: 'css-loader',
 						options: {
-							minimize: true,
 							importLoaders: 3,
 						},
 					},
 					'resolve-url-loader',
-					'postcss-loader',
-					'sass-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: true,
+
+						},
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: true,
+						},
+					},
 				],
 			},
 			// {
@@ -158,7 +188,7 @@ module.exports = {
 
 						options: {
 							outputPath: 'images/',
-							name: '[name][chunkhash].[ext]',
+							name: '[name][hash].[ext]',
 						},
 					},
 				],
@@ -171,7 +201,7 @@ module.exports = {
 						loader: 'file-loader',
 						options: {
 							outputPath: 'fonts/',
-							name: '[name][chunkhash].[ext]',
+							name: '[name][hash].[ext]',
 						},
 					},
 				],
