@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 /* eslint-disable */
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
@@ -21,6 +22,12 @@ module.exports = {
 		new WebpackBar({
 			profile: true,
 		}),
+		new webpack.DefinePlugin({
+			PRODUCTION: JSON.stringify(true),
+			'process.env': {
+				NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+			},
+		}),
 		new HtmlWebpackPlugin({
 			title: 'Flight Search Engine',
 			inject: true,
@@ -29,7 +36,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].[chunkhash:8].css',
 		}),
-		new BundleAnalyzerPlugin(),
+		// new BundleAnalyzerPlugin(),
 		new workboxPlugin.GenerateSW({
 			swDest: 'sw.js',
 			clientsClaim: true,

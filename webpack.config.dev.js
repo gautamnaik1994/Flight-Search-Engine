@@ -1,7 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
+process.env.NODE_ENV = 'development';
 module.exports = {
 	mode: 'development',
 
@@ -12,6 +14,12 @@ module.exports = {
 			template: './src/views/index.html',
 		}),
 		new ErrorOverlayPlugin(),
+		new webpack.DefinePlugin({
+			PRODUCTION: JSON.stringify(false),
+			'process.env': {
+				NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+			},
+		}),
 	],
 	performance: {
 		hints: 'warning',
