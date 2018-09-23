@@ -1,9 +1,9 @@
-.search-box{
+.search-box {
 	padding: $grid-gutter-width;
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	.find-flight-btn{
+	.find-flight-btn {
 		padding: 0.75rem;
 	}
 	@include media-breakpoint-down(md) {

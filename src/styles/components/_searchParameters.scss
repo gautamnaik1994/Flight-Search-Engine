@@ -1,27 +1,26 @@
-.search-parameters{
+.search-parameters {
 	justify-content: space-between;
 	padding: 15px;
-	.left-sec{
+	.left-sec {
 		font-size: 1.2rem;
 		text-transform: uppercase;
-		&>*{
+		& > * {
 			vertical-align: middle;
 			line-height: 44px;
 		}
-		i{
+		i {
 			margin: 0 10px;
 		}
 	}
-	.right-sec{
-		&>span{
+	.right-sec {
+		& > span {
 			display: inline-block;
-			&+span{
+			& + span {
 				margin-left: 20px;
 			}
 		}
-		label{
+		label {
 			margin-bottom: 4px;
 		}
-
 	}
 }

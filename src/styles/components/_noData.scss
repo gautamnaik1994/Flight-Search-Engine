@@ -1,13 +1,13 @@
-.no-data{
-min-height: 100%;
-position:relative;
-display:flex;
-align-items: center;
-justify-content: center;
+.no-data {
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @include media-breakpoint-down(md) {
-	.no-data{
-		min-height:300px;
-		}
+	.no-data {
+		min-height: 300px;
+	}
 }

@@ -1,41 +1,42 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('./fonts/icomoon.eot?ir800w');
-  src:  url('./fonts/icomoon.eot?ir800w#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.ttf?ir800w') format('truetype'),
-    url('./fonts/icomoon.woff?ir800w') format('woff'),
-    url('./fonts/icomoon.svg?ir800w#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "icomoon";
+	src: url("./fonts/icomoon.eot?ir800w");
+	src: url("./fonts/icomoon.eot?ir800w#iefix") format("embedded-opentype"),
+		url("./fonts/icomoon.ttf?ir800w") format("truetype"),
+		url("./fonts/icomoon.woff?ir800w") format("woff"),
+		url("./fonts/icomoon.svg?ir800w#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-passengers:before {
-  content: "\e900";
+	content: "\e900";
 }
 .icon-date:before {
-  content: "\e901";
+	content: "\e901";
 }
 .icon-flight-takeoff:before {
-  content: "\e902";
+	content: "\e902";
 }
 .icon-flight-land:before {
-  content: "\e903";
+	content: "\e903";
 }
 .icon-flight:before {
-  content: "\e904";
+	content: "\e904";
 }

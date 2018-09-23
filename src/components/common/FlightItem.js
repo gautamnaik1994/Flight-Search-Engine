@@ -46,12 +46,7 @@ const FlightItem = ({ data }) => (
 			)}
 		</div>
 		<div className="col-md-3 offset-md-1 text-center price-box">
-			<div className="price">
-Rs
-{' '}
-{data.price}
-{' '}
- </div>
+			<div className="price">Rs {data.price} </div>
 			<button type="button" className="btn btn-primary">
 				Book Flight{' '}
 			</button>

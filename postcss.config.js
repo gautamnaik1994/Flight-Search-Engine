@@ -1,5 +1,5 @@
 /*eslint-disable*/
-console.log(" Environment" ,process.env.NODE_ENV);
+console.log(' Environment', process.env.NODE_ENV);
 module.exports = {
 	plugins: [
 		require('postcss-cssnext')({
